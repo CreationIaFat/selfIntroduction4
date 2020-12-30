@@ -35,10 +35,15 @@
 
 <script lang="ts">
 import { Component, Vue, /*Prop*/ } from "vue-property-decorator";
+import * as constants from '@/constants/TopPage';
+import { mapGetters } from "vuex";
 
 @Component({
     components: {
 
+    },
+    computed: {
+        ...mapGetters({ model: constants.GET_TOP_PAGE_MODEL}),
     },
 })
 export default class SotahTopicArea extends Vue{

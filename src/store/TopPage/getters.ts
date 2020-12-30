@@ -1,12 +1,10 @@
-// import { Getters, IState } from '@/store/types';
-// import * as types from '@/store/TopPage/types'
+import { Getters, /*IState*/ } from '@/store/types';
+import * as types from '@/store/TopPage/types'
 
-// const getters: Getters<types.IState, types.IGetters, IState > = {
-//     // getterModel: (state, rootState) => {
-//     //     {
-//     //         kj;JSON: state.kfgkjg;
-//     //         dkjfk: rootState.akj;
-//     //     };
-// }
+const getters: Getters<types.IState, types.IGetters/*, IState*/ > = {
+    getTopPageModel: (state, /*rootState*/) => {
+            return state.MouseOrveredItemName;
+        },
+};
 
-// export default getters;
+export default getters;

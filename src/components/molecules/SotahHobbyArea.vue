@@ -12,7 +12,8 @@
                 </tr>
                  <tr>
                      <SotahTableData v-for="item in HobbyDataArray2" :key="item" 
-                    :dataName="item"/>
+                    :dataName="item"
+                    @mouseOveredItem='MouseOrveredItemNameForOperateAction' />
                 </tr>
             </tbody>
         </table>

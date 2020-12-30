@@ -11,4 +11,5 @@
     }
 
     export interface IGetters {
+        getTopPageModel: string | null ;
     }
